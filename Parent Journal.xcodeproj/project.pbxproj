@@ -15,6 +15,7 @@
 		20B80F0A1CD43C2B008BE447 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20B80F081CD43C2B008BE447 /* LaunchScreen.storyboard */; };
 		20B80F151CD43C2C008BE447 /* Parent_JournalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B80F141CD43C2C008BE447 /* Parent_JournalTests.swift */; };
 		20B80F201CD43C2C008BE447 /* Parent_JournalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B80F1F1CD43C2C008BE447 /* Parent_JournalUITests.swift */; };
+		20D34B201CDAB36A00B5DFFD /* Login Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D34B1F1CDAB36A00B5DFFD /* Login Controller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		20B80F1B1CD43C2C008BE447 /* Parent JournalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Parent JournalUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20B80F1F1CD43C2C008BE447 /* Parent_JournalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parent_JournalUITests.swift; sourceTree = "<group>"; };
 		20B80F211CD43C2C008BE447 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20D34B1F1CDAB36A00B5DFFD /* Login Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Login Controller.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		20B80EFC1CD43C2B008BE447 /* Parent Journal */ = {
 			isa = PBXGroup;
 			children = (
+				20D34B1F1CDAB36A00B5DFFD /* Login Controller.swift */,
 				20B80EFD1CD43C2B008BE447 /* AppDelegate.swift */,
 				20B80EFF1CD43C2B008BE447 /* FirstViewController.swift */,
 				20B80F011CD43C2B008BE447 /* SecondViewController.swift */,
@@ -261,6 +264,7 @@
 			files = (
 				20B80F021CD43C2B008BE447 /* SecondViewController.swift in Sources */,
 				20B80EFE1CD43C2B008BE447 /* AppDelegate.swift in Sources */,
+				20D34B201CDAB36A00B5DFFD /* Login Controller.swift in Sources */,
 				20B80F001CD43C2B008BE447 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -488,6 +492,7 @@
 				20B80F261CD43C2C008BE447 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		20B80F271CD43C2C008BE447 /* Build configuration list for PBXNativeTarget "Parent JournalTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +501,7 @@
 				20B80F291CD43C2C008BE447 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		20B80F2A1CD43C2C008BE447 /* Build configuration list for PBXNativeTarget "Parent JournalUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +510,7 @@
 				20B80F2C1CD43C2C008BE447 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
