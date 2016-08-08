@@ -170,7 +170,7 @@
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="jYc-Aw-GsW" kind="show" id="dRI-oz-BD9"/>
+                                            <segue destination="jYc-Aw-GsW" kind="show" identifier="backToLogin" id="dRI-oz-BD9"/>
                                         </connections>
                                     </button>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8xv-VM-Mw2">
@@ -188,18 +188,6 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9bL-3A-bGF">
-                                        <rect key="frame" x="13" y="442" width="292" height="35"/>
-                                        <color key="backgroundColor" red="0.45882352939999999" green="0.74901960779999999" blue="0.0039215686269999999" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                        <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
-                                        <state key="normal" title="Create Account">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="49e-Tb-3d3" kind="show" id="BJJ-RK-FFk"/>
-                                        </connections>
-                                    </button>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="aPj-wu-Y9J">
                                         <rect key="frame" x="13" y="215" width="292" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -225,9 +213,18 @@
                                         <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <size key="shadowOffset" width="2" height="2"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" alpha="0.85000002384185791" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="21S-0D-i7O">
-                                        <rect key="frame" x="-357" y="-97" width="1255" height="690"/>
-                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9bL-3A-bGF">
+                                        <rect key="frame" x="13" y="442" width="292" height="35"/>
+                                        <color key="backgroundColor" red="0.45882352939999999" green="0.74901960779999999" blue="0.0039215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
+                                        <state key="normal" title="Create Account">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="createAccountPressed:" destination="A7i-xL-6Mk" eventType="touchUpInside" id="9UB-gC-SW8"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -235,6 +232,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="firstname" destination="aPj-wu-Y9J" id="YBA-gH-7y0"/>
+                        <outlet property="lastname" destination="L8f-ZZ-0Qd" id="x5M-UG-aG9"/>
+                        <outlet property="password" destination="8xv-VM-Mw2" id="HPj-zY-ZR1"/>
+                        <outlet property="username" destination="KYO-yk-g1s" id="zCq-9d-4NE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jUV-OO-GC4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -270,11 +273,6 @@
                                             <segue destination="A7i-xL-6Mk" kind="show" id="ddA-nR-Mte"/>
                                         </connections>
                                     </button>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pFZ-ja-E5B">
-                                        <rect key="frame" x="14" y="374" width="292" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                                    </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="geQ-xg-Vl9">
                                         <rect key="frame" x="13" y="321" width="292" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -288,6 +286,9 @@
                                         <state key="normal" title="Login">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="sendLogin:" destination="jYc-Aw-GsW" eventType="touchUpInside" id="t8G-Qa-bpJ"/>
+                                        </connections>
                                     </button>
                                     <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Parent Journal" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dXq-gO-VAr">
                                         <rect key="frame" x="0.0" y="23" width="320" height="84"/>
@@ -309,6 +310,11 @@
                                         <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <size key="shadowOffset" width="2" height="2"/>
                                     </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pFZ-ja-E5B">
+                                        <rect key="frame" x="14" y="374" width="292" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -318,6 +324,9 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="ImageView" destination="8Yd-8j-OEE" id="dDS-6x-pic"/>
+                        <outlet property="email" destination="geQ-xg-Vl9" id="gwq-Wh-cX3"/>
+                        <outlet property="password" destination="pFZ-ja-E5B" id="IfE-PP-9sM"/>
+                        <segue destination="49e-Tb-3d3" kind="show" identifier="successfulLogin" id="9X0-lO-m29"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xlo-PZ-iX1" userLabel="First Responder" sceneMemberID="firstResponder"/>
